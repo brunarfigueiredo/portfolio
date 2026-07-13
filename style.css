@@ -508,9 +508,43 @@ nav a{
 
 @media (max-width:900px){
 
+    header{
+
+    padding:15px 20px;
+
+    display:flex;
+
+    flex-direction:row;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+    .logo{
+
+    height:80px;
+
+    width:auto;
+
+    margin:0;
+
+}
+
     .menu-toggle{
 
         display:block;
+
+        font-size:34px;
+
+        background:none;
+
+        border:none;
+
+        color:white;
+
+        cursor:pointer;
 
     }
 
@@ -518,11 +552,13 @@ nav a{
 
         display:none;
 
-        flex-direction:column;
-
         width:100%;
 
+        flex-direction:column;
+
         text-align:center;
+
+        gap:25px;
 
         margin-top:20px;
 
@@ -530,7 +566,7 @@ nav a{
 
     nav.active{
 
-        display:flex;
+        display:flex !important;
 
     }
 
