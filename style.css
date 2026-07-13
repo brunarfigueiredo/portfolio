@@ -1,0 +1,473 @@
+/* ==========================
+   RESET
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:#000;
+
+    color:#fff;
+
+    font-family:'Inter',sans-serif;
+
+    overflow-x:hidden;
+
+}
+
+/* ==========================
+   HEADER
+========================== */
+
+header{
+
+    position:sticky;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:25px 60px;
+
+    background:rgba(0,0,0,.95);
+
+    backdrop-filter:blur(10px);
+
+    z-index:999;
+
+}
+
+.logo{
+
+    height:180px;
+
+    width:auto;
+
+}
+
+nav{
+
+    display:flex;
+
+    gap:40px;
+
+}
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:15px;
+
+    letter-spacing:2px;
+
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    opacity:.6;
+
+}
+
+/* ==========================
+   HERO
+========================== */
+
+.hero{
+
+    text-align:center;
+
+    padding-top:120px;
+
+    padding-bottom:80px;
+
+}
+
+.hero h1{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-style:italic;
+
+    font-weight:400;
+
+    font-size:86px;
+
+    line-height:1.1;
+
+}
+
+.hero p{
+
+    margin-top:55px;
+
+    letter-spacing:1px;
+
+    font-size:17px;
+
+    font-weight:300;
+
+    text-transform:uppercase;
+
+}
+
+/* ==========================
+   VIDEO
+========================== */
+
+.video-section{
+
+    width:100%;
+
+    margin-bottom:200px;
+
+}
+
+.video-section video{
+
+    width:100%;
+
+    display:block;
+
+}
+/* ==========================
+   PORTEFÓLIO
+========================== */
+
+.portfolio{
+
+    width:90%;
+
+    max-width:1400px;
+
+    margin:auto;
+
+    padding-bottom:120px;
+
+}
+
+.portfolio h2{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:55px;
+
+    font-weight:400;
+
+    text-align:center;
+
+    margin-bottom:150px;
+
+}
+
+.gallery{
+
+    column-count:2;
+
+    column-gap:24px;
+
+}
+
+.gallery img{
+
+    width:100%;
+
+    margin-bottom:24px;
+
+    display:block;
+
+    transition:.45s ease;
+
+    cursor:pointer;
+
+}
+
+.gallery img:hover{
+
+    transform:scale(1.02);
+
+}
+
+/* ==========================
+   POR TRÁS DA LENTE
+========================== */
+
+#about{
+
+    width:90%;
+
+    max-width:1400px;
+
+    margin:150px auto;
+
+    display:grid;
+
+    grid-template-columns:420px 1fr;
+
+    gap:70px;
+
+    align-items:center;
+
+}
+
+.about-photo img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+.about-text h2{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:55px;
+
+    font-weight:400;
+
+    margin-bottom:35px;
+
+}
+
+.about-text p{
+
+    line-height:1.9;
+
+    color:#dddddd;
+
+    margin-bottom:22px;
+
+    font-size:17px;
+
+}
+/* ==========================
+   VAMOS CONVERSAR
+========================== */
+
+#contact{
+
+    width:90%;
+
+    max-width:700px;
+
+    margin:120px auto;
+
+    text-align:center;
+
+}
+
+#contact h2{
+
+    font-family:'Cormorant Garamond', serif;
+
+    font-size:42px;
+
+    font-weight:400;
+
+    margin-bottom:80px;
+
+}
+
+#contact p{
+
+    color:#cccccc;
+
+    line-height:1.8;
+
+    margin-bottom:50px;
+
+}
+
+form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+input,
+textarea{
+
+    width:100%;
+
+    background:transparent;
+
+    border:1px solid #444;
+
+    color:white;
+
+    padding:18px;
+
+    font-size:16px;
+
+    font-family:'Inter',sans-serif;
+
+    transition:.3s;
+
+}
+
+input:focus,
+textarea:focus{
+
+    outline:none;
+
+    border-color:white;
+
+}
+
+textarea{
+
+    min-height:180px;
+
+    resize:vertical;
+
+}
+
+button{
+
+    background:white;
+
+    color:black;
+
+    border:none;
+
+    padding:18px;
+
+    font-size:15px;
+
+    letter-spacing:2px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    background:#dddddd;
+
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer{
+
+    text-align:center;
+
+    padding:40px;
+
+    color:#777;
+
+    font-size:14px;
+
+}
+
+/* ==========================
+   RESPONSIVO
+========================== */
+
+@media (max-width:900px){
+
+header{
+
+    padding:20px;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+nav{
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+.hero{
+
+    padding-top:80px;
+
+}
+
+.hero h1{
+
+    font-size:52px;
+
+}
+
+.hero p{
+
+    letter-spacing:5px;
+
+    font-size:13px;
+
+}
+
+.gallery{
+
+    column-count:1;
+
+}
+
+#about{
+
+    grid-template-columns:1fr;
+
+    gap:40px;
+
+}
+
+.about-photo{
+
+    max-width:420px;
+
+    margin:auto;
+
+}
+
+.about-text{
+
+    text-align:left;
+
+}
+
+#contact h2{
+
+    font-size:44px;
+
+}
+
+}
